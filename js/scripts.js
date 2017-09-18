@@ -7,11 +7,10 @@ $(document).ready(function() {
     var myArrays = [fav1, fav2, fav3];
     // myArrays.push("someThing");
 
-
-    myArrays.forEach(function(myArray) {
-      alert(myArray);
-      $('#list').append('<li>' + myArrays[myArray] + '</li>');
-    });
+    for (var i = 0; i < myArrays.length; i++) {
+      $('#list').append('<li>' + myArrays[i] + '</li>');
+      alert(myArrays[i]);
+    }
 
 
 
